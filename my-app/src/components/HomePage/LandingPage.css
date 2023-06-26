@@ -1,0 +1,37 @@
+h1 {
+    font-family: 'Lexend SemiBold', sans-serif;
+    font-weight: 500;
+  }
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: small;
+    
+}
+
+h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: medium;
+  
+}
+
+  
+.landing-page {
+  text-align: right;
+  padding: 20px;
+  grid-column: landing-p;
+  color: white;
+  
+}
+
+.neumorphic-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2),
+              -4px -4px 10px rgba(255, 255, 255, 0.7);
+}

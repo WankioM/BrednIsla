@@ -1,0 +1,43 @@
+.iconlist{
+    color: white;
+    display: grid;
+    grid-template-columns: [before] auto [one] 90px [two] 90px [three] 90px [four] 90px;
+    
+    
+
+}
+
+.icon1{
+    grid-column: one;
+    
+
+}
+
+.icon2{
+    grid-column:two;
+    
+
+}
+
+.icon3{
+    grid-column: three;
+    
+
+}
+
+.icon4{
+    grid-column: four;
+    
+
+}
+
+.logoicon {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .logoicon:hover {
+    transform: scale(1.2);
+  }
+  

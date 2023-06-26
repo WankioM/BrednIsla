@@ -1,0 +1,6 @@
+.contactpage{
+    display: grid;
+    grid-template-columns: [address] 50% [message] 50%;
+    grid-template-rows: [borderup] 25% [contentm] auto [borderdown] 15%;
+    color: white;
+}

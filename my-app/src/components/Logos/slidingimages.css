@@ -1,0 +1,56 @@
+.imgdiv{
+    width: 400px;
+  height: 400px;
+}
+
+@keyframes imageAnimation {
+  0% {
+    background-image: url('https://www.roseandgrey.co.uk/news/wp-content/uploads/2020/01/For_RoseandGrey_January2020_DayOne_206-1-683x1024.jpg');
+  }
+  33% {
+    background-image: url('https://www.roseandgrey.co.uk/news/wp-content/uploads/2020/02/For_RoseandGrey_January2020_DayOne_144-683x1024.jpg');
+  }
+  66% {
+    background-image: url('https://domkapa.com/wp-content/uploads/Featured-image.jpg.webp');
+  }
+  100% {
+    background-image: url('https://i.pinimg.com/564x/b1/6a/c9/b16ac904169111110e56f0a1c1d361d6.jpg');
+  }
+}
+
+.sliderdiv {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  animation: imageAnimation 12s infinite;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+              -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes imageAnimation2 {
+  0% {
+    background-image: url('https://wsrv.nl/?url=https://thedesignfiles.wpenginepowered.com/wp-content/uploads/2018/11/sarah-ellison-tdf-2.jpg&w=1440&q=75&output=webp');
+  }
+  33% {
+    background-image: url('https://wsrv.nl/?url=https://thedesignfiles.wpenginepowered.com/wp-content/uploads/2018/11/sarah-ellison-tdf-ad.jpg&w=1920&q=75&output=webp');
+  }
+  66% {
+    background-image: url('https://design-milk.com/images/2021/08/Man-of-Parts-Furniture-Savignyplatz-Table-1.jpg');
+  }
+  100% {
+    background-image: url('https://sp.apolloboxassets.com/vendor/product/productImages/2022-07-12/HnuJvArray_11.jpg');
+  }
+}
+
+.sliderdiv2 {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  animation: imageAnimation2 12s infinite;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+              -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
