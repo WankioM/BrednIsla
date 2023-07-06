@@ -1,7 +1,8 @@
 .App {
   text-align: center;
   height: 300vh;
-  background-color: #000502;
+  
+  background-image: url('./assets/web_bg.png');
   display: grid;
   grid-template-rows:[landing] 100vh [slidingim] 100vh [contactus];
 }
@@ -18,7 +19,7 @@
 }
 
 .App-header {
-  background-image: url('./assets/web5_0001.png');
+  
   
   min-height: 100vh;
   display: flex;
@@ -43,8 +44,7 @@
 }
 
 .main {
-  background-image: url('./assets/web5_0001.png');
-  background-color: rgba(138, 43, 226, 0.5); /* Violet color with 50% opacity */
+ 
   height: 750px ;
   grid-row: landing;
  
@@ -85,7 +85,7 @@
 }
 
 .bottomline{
-  background-image: url('./assets/web5_0001.png');
+  
   
   grid-row: desc;
   grid-column: right;
