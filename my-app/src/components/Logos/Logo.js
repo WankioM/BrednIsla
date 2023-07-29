@@ -13,28 +13,44 @@ import SlidingImages from './SlidingImages.js'
 
 
 const Logo = () => {
+
+  const whatsappNumber = '+254795104387';
+  const email = 'edwardjohnokoth@gmail.com';
+
   return (
     <footer className="logo" style={{ padding: '20px'}} >
        
         <div className='iconlist'>
 
           <div className='icon1'>
-  
-        <img src={facebookIcon} alt="Facebook Icon" className='logoicon'/>
-        </div>
+
+            <a href='https://www.facebook.com/bredisla/' target='_blank' rel='noopener noreferrer'>
+              <img src={facebookIcon} alt="Facebook Icon" className='logoicon'/>
+              </a>
+          </div>
 
         <div className='icon2'>
-        <img src={mailIcon} alt="Facebook Icon" className='logoicon'/>
+            <a href={`mailto:${email}`} target='_blank' rel='noopener noreferrer'>
+            <img src={mailIcon} alt="Mail Icon" className='logoicon' />
+            </a>
         </div>
 
 
         <div className='icon3'>
-        <img src={instagramIcon} alt="Facebook Icon" className='logoicon'/>
+        <a href='https://www.instagram.com/bredandisla/' target='_blank' rel='noopener noreferrer'>
+        <img src={instagramIcon} alt="Instagram Icon" className='logoicon'/>
+        </a>
         </div>
 
 
       <div className='icon4'>
-      <img src={whatsappIcon} alt="Facebook Icon" className='logoicon'/>
+      <a
+            href={`https://wa.me/${whatsappNumber}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+      <img src={whatsappIcon} alt="WhatsApp Icon" className='logoicon'/>
+      </a>
       </div>
 
       </div>

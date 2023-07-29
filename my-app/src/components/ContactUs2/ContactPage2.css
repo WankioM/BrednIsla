@@ -14,7 +14,7 @@
     width: 100%; /* Adjust as needed for the left overlay */
     
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Darker green with 80% opacity */
+   
     color: white;
     max-width: 1360px;
    
@@ -23,7 +23,7 @@
     margin-left: 70px ;
     border-radius: 10px;
 
-    background-color: rgba(255, 255, 255, 1); /* White background color */
+    background-color: rgba(20, 50, 50, 0.6); /* White background color */
     backdrop-filter: blur(12px);
     display: flex;
     flex-direction: column;
@@ -41,19 +41,25 @@
     background-image: url('../../assets/living-room-gcbfefa515_1920.jpg');
     border-radius: 10px;
     margin-top: 30px;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+    -5px -5px 10px rgba(20, 50, 50, 0.7);
     
 
   }
   
   .overlay-top {
     width: 100%; /* Adjust as needed for the top overlay */
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+    -5px -5px 10px rgba(20, 50, 50, 0.7);
   }
   
 .neumorphic-input-container {
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 10px;
-    color:black;
+    color:white;
     
   }
 
@@ -77,6 +83,7 @@
     
     box-shadow: 4px 4px 10px rgba(163, 177, 198, 0.4),
                 -4px -4px 10px rgba(255, 255, 255, 0.8);
+    color: white;
   }
   
 .neumorphic-button {
@@ -90,6 +97,7 @@
     box-shadow: 4px 4px 10px rgba(163, 177, 198, 0.4),
                 -4px -4px 10px rgba(255, 255, 255, 0.8);
     cursor: pointer;
+    color: white;
   }
 
 .contactents{
@@ -105,5 +113,13 @@
     font-family: 'Lexend SemiBold', sans-serif;
     font-weight: 500;
     margin-bottom: 10px;
-    color: black;
+    color: white;
+  }
+
+  .contactents p {
+    font-size: 14px;
+    font-family: 'Lexend SemiBold', sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: white;
   }

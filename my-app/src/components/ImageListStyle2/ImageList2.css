@@ -37,7 +37,7 @@
     left: 790px;
     width: 30%;
     height: 455px;
-    background-color: rgba(20, 50, 30, 0.6); /* Hunter green with 30% opacity */
+    background-color: rgba(20, 50, 45, 0.6); /* Hunter green with 30% opacity */
     backdrop-filter: blur(12px);
 
     display: flex;
