@@ -1,0 +1,91 @@
+.slidingimcontainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+
+    width: 100%;
+ 
+
+    height: 565px;
+    max-width: 1440px;
+    background-image: url('../../assets/living-room-gcbfefa515_1920.jpg');
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 90px;
+    margin-right: 30px;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+                -5px -5px 10px rgba(20, 50, 30, 0.6);
+    
+    backdrop-filter: blur(12px);
+  }
+
+  .overlay-parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    left: 790px;
+    width: 30%;
+    height: 455px;
+    background-color: rgba(20, 50, 30, 0.6); /* Hunter green with 30% opacity */
+    backdrop-filter: blur(12px);
+
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Your_Custom_Font', sans-serif; /* Replace 'Your_Custom_Font' with your desired font */
+  padding: 80px 20px 0; 
+ 
+  }
+
+  .overlay2 h2 {
+    font-size: 22px;
+    font-family: 'Lexend SemiBold', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .overlay2 p {
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: small;
+  }
+
+  .overlay2 hr {
+    border: none;
+    border-top: 2px solid white; /* White horizontal line */
+    width: 50%; /* Adjust the line's width as needed */
+    margin: 10px auto; /* Centers the line */
+  }
+
+  .inspiration {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .inspiration p {
+    font-style: italic;
+    font-size: 13px;
+    margin: 4px;
+  }
+
+  
+  
+  
+  
+  
+  

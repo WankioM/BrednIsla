@@ -8,6 +8,8 @@ import blackLogo from './assets/black_logo_bni.png';
 import ContactPage from './components/ContactUs/ContactPage';
 import horizontalLogo from './assets/Horizontal-Logo-White.png';
 import ImageList from './components/ImageList/ImageList';
+import ImageList2 from './components/ImageListStyle2/ImageList2';
+import ContactPage2 from './components/ContactUs2/ContactPage2';
 
 
 
@@ -46,7 +48,7 @@ function App() {
 
 
       <div className="slidingim">
-       <ImageList />
+       <ImageList2 />
         
 
 
@@ -55,7 +57,7 @@ function App() {
       </div>
 
       <div className="contactus">
-        <ContactPage />
+        <ContactPage2 />
         
       </div>
       

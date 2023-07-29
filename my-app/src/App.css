@@ -103,7 +103,8 @@
 }
 
 .slidingim{
-  background-color: rgba(1, 19, 12, 0.322); 
+  position: relative;
+  
   
   display: grid;
   grid-row: slidingim;

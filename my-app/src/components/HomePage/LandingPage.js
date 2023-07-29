@@ -2,6 +2,14 @@ import React from 'react';
 import './LandingPage.css';
 
 const LandingPage = () => {
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact-section');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="landing-page">
       <h3>bred and isla collection</h3>
@@ -14,7 +22,7 @@ const LandingPage = () => {
       </p>
      
 
-      <button className="neumorphic-button">Contact Us</button>
+      <button className="neumorphic-button" onClick={scrollToContact}>Contact Us</button>
 
     </div>
   );
