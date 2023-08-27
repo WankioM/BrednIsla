@@ -1,5 +1,6 @@
 import './ContactPage2.css';
-import React, { useState }  from 'react'
+import React, { useState, useRef }  from 'react'
+import emailjs from '@emailjs/browser';
 
 function ContactPage2() {
 
@@ -9,6 +10,8 @@ function ContactPage2() {
     phoneEmail: '',
     message: '',
   });
+
+  const form = useRef();
 
   // Handle input changes and update the form data state
   const handleInputChange = (event) => {
@@ -29,57 +32,75 @@ function ContactPage2() {
     // Destructure the formData
     const { name, phoneEmail, message } = formData;
 
-    // Compose the email details
-    const email = 'tracywankio29@gmail.com';
-    const subject = 'newinquiry';
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=Name: ${encodeURIComponent(name)}%0APhone/Email: ${encodeURIComponent(phoneEmail)}%0AMessage: ${encodeURIComponent(message)}`;
-
-    // Open the mail client with the pre-filled email
-    window.open(mailtoLink);
     
-    // Clear the form fields after submission (optional)
-    setFormData({
-      name: '',
-      phoneEmail: '',
-      message: '',
-    });
+
+    // Use the emailjs API to send the email
+    emailjs.sendForm('service_gycljf6', 'template_w787mql', form.current, '0VVWmdqvURihyz7ed')
+      .then((result) => {
+          console.log(result.text);
+          console.log('Form Elements:', form.current.elements);
+          
+          const formElements = form.current.elements;
+
+          for (let i = 0; i < formElements.length; i++) {
+            const element = formElements[i];
+            console.log('Element Name:', element.name);
+            console.log('Element Value:', element.value);
+            // Access other properties as needed
+          }
+          
+          // Clear the form fields after successful submission
+          setFormData({
+            name: '',
+            phoneEmail: '',
+            message: '',
+          });
+      }, (error) => {
+          console.log(error.text);
+      });
+  
+    
+    
+   
   };
 
 
   return (
     <div className='contact-page-container' id="contact-section">
-        Contact page container
-      {/* Main content */}
-      <div className='main-content'>
-        
-       
-        {/* Add your contact form or other content here */}
-      </div>
+    Contact page container
+  {/* Main content */}
+  <div className='main-content'>
+    
+   
+    {/* Add your contact form or other content here */}
+  </div>
 
-      {/* Second overlay on top */}
-      <div className='overlay-top'>
-        {/* Add content for the second overlay here */}
+  {/* Second overlay on top */}
+  <div className='overlay-top'>
+    {/* Add content for the second overlay here */}
 
-            <div className= 'contactents'>
+        <div className= 'contactents'>
+
 
                 <h2>Contact Us</h2>
                 <p>
                   For any inquiries or to request a quote, please feel free to contact us.
                 </p>
+                <form ref={form} onSubmit={handleFormSubmit}>
                 <div className='neumorphic-input-container'>
                 <label htmlFor='name'>Name</label>
-                <input type='text' id='name' value={formData.name} onChange={handleInputChange}/>
+                <input type='text' id='name' name='name' value={formData.name} onChange={handleInputChange}/>
                 </div>
                 <div className='neumorphic-input-container'>
                 <label htmlFor='phoneEmail'>Phone/Email</label>
-                <input type='text' id='phoneEmail' value={formData.phoneEmail} onChange={handleInputChange} />
+                <input type='text' id='phoneEmail' name='phoneEmail' value={formData.phoneEmail} onChange={handleInputChange} />
                 </div>
                 <div className='neumorphic-input-container'>
                 <label htmlFor='message'>Message</label>
-                <textarea id='message' rows='4' value={formData.message} onChange={handleInputChange}></textarea>
+                <textarea id='message' rows='4' name = 'message' value={formData.message} onChange={handleInputChange}></textarea>
                 </div>
-                <button className='neumorphic-button' type='submit' onClick={handleFormSubmit }>Send</button>
-
+                <button className='neumorphic-button' type='submit'>Send</button>
+                </form>
                 </div>
         
        
