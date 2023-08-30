@@ -40,4 +40,30 @@
   .logoicon:hover {
     transform: scale(1.2);
   }
+
+  .logo{
+    padding: 20px;
+  }
+  
+
+
+/* Original styles outside of media query */
+
+@media (max-width: 500px) and (min-height: 740px) {
+    .iconlist {
+      grid-template-columns: [one] 25% [two] 25% [three] 25% [four] 25%; /* Adjust column widths for smaller screens */
+    }
+  
+    .logoicon {
+      width: 15px; /* Adjust icon width for smaller screens */
+    }
+    
+    .logoicon:hover {
+      transform: scale(1.1); /* Slightly reduce the hover scaling for smaller screens */
+    }
+
+    .logo{
+      padding: 15px;
+    }
+  }
   

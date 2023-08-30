@@ -81,3 +81,54 @@ img{
     transform: translateX(0%);
   }
   
+
+  /* Original styles outside of media query */
+
+@media (max-width: 360px) and (min-height: 740px) {
+  .images {
+    grid-template-columns: [slide1] 100% [slide2] 100%; /* Adjust column widths for smaller screens */
+    grid-template-rows: [row1] 40% [row2] 60%; /* Adjust row heights for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    padding-top: 20px; /* Adjust top padding for smaller screens */
+  }
+
+  .textdesc {
+    grid-column: slide1;
+    grid-row: row2;
+    padding: 10px; /* Adjust padding for smaller screens */
+    padding-top: 60px; /* Adjust top padding for smaller screens */
+  }
+
+  .sideA,
+  .sideB,
+  .sideC {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .h2slant {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .pcaps {
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
+
+  /* Adjust slide animation for smaller screens */
+  .sideA,
+  .sideB,
+  .sideC {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .slide-left {
+    transform: translateX(-100%);
+  }
+
+  .slide-right {
+    transform: translateX(100%);
+  }
+
+  .slide-in {
+    transform: translateX(0%);
+  }
+}

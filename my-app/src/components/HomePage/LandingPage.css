@@ -1,6 +1,7 @@
 h1 {
     font-family: 'Lexend SemiBold', sans-serif;
     font-weight: 500;
+    font-size: x-large;
   }
 
 p{
@@ -35,3 +36,31 @@ h3{
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2),
               -4px -4px 10px rgba(255, 255, 255, 0.7);
 }
+
+
+
+/* Original typography and button styles outside of media query */
+
+@media (max-width: 500px) and (min-height: 740px) {
+  h1 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  p {
+    font-size: x-small; /* Adjust font size for smaller screens */
+  }
+
+  h3 {
+    font-size: small; /* Adjust font size for smaller screens */
+  }
+
+  .landing-page {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .neumorphic-button {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    border-radius: 8px; /* Adjust border radius for smaller screens */
+  }
+}
+

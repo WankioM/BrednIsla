@@ -1,7 +1,11 @@
 .contact-page-container {
     position: relative;
-    margin: 100px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-right: 100px;
     height: 80%;
+    max-height: 100%;
+    
   }
   
   
@@ -56,18 +60,20 @@
   }
   
 .neumorphic-input-container {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 10px;
     padding: 10px;
     color:white;
+    max-width: 95%;
+    max-height: 200px;
     
   }
 
 .neumorphic-input-container label {
    
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 
-    font-size: 17px;
+    font-size: 16px;
     text-align: left;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -84,6 +90,7 @@
     box-shadow: 4px 4px 10px rgba(163, 177, 198, 0.4),
                 -4px -4px 10px rgba(255, 255, 255, 0.8);
     color: white;
+    overflow-y: auto;
   }
   
 .neumorphic-button {
@@ -105,8 +112,11 @@
     margin: 30px;
     margin-left: 600px;
     width: 50%;
+    max-height: 100%;
 
   }
+
+ 
 
 .contactents h2 {
     font-size: 24px;
@@ -123,3 +133,92 @@
     margin-bottom: 10px;
     color: white;
   }
+
+  
+
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller viewports */
+    .contactents {
+      margin: 10px; /* Example margin adjustment */
+      margin-left: 0; /* Remove left margin */
+      width: 100%; /* Take up full width */
+      /* You can adjust other properties here */
+    }
+  }
+
+  .bottom-div {
+    position: absolute; /* Position relative to parent */
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width of parent */
+    text-align: left; /* Center the text horizontally */
+    color: white;
+    
+  }
+
+  .bottom-div p{
+    font-size: x-small;
+    font-weight: 200;
+  }
+
+
+  /* Original styles outside of media query */
+
+@media (max-width: 500px) and (min-height: 740px) {
+  .contact-page-container {
+    margin: 10px; /* Adjust margin for smaller screens */
+    margin-top: 30px; /* Adjust margin for smaller screens */
+    margin-left: 20px; /* Adjust margin for smaller screens */
+    margin-right: 20px; /* Adjust margin for smaller screens */
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  
+  .bottom-div p{
+    font-size: xx-small;
+    font-weight: 100;
+  }
+
+  .overlay-left{
+    display: none;
+
+  }
+
+  .overlay-top{
+    margin-left: 20px;
+    background-color: rgba(242, 242, 242, 0.3);
+    max-height: 80%;
+  }
+
+  
+
+  .neumorphic-input-container {
+    max-width: 100%; /* Adjust max-width for smaller screens */
+    max-height: none; /* Remove max-height for smaller screens */
+  }
+
+  .neumorphic-input-container label {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .neumorphic-button {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    border-radius: 8px; /* Adjust border radius for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .contactents {
+    margin: 10px; /* Adjust margin for smaller screens */
+    margin-left: 0; /* Remove left margin for smaller screens */
+    width: 100%; /* Take up full width for smaller screens */
+  }
+
+  .contactents h2 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .contactents p {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}

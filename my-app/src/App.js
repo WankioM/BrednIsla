@@ -22,7 +22,7 @@ function App() {
 
           <div className="logodiv">
              
-              <img src={horizontalLogo} alt="BrednIsla logo" style={{ width: '150px', height: 'auto' }}/>
+              <img src={horizontalLogo} alt="BrednIsla logo" className='bredlogo'/>
             </div>
 
           <div className="topline">

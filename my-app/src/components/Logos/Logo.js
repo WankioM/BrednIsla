@@ -18,7 +18,7 @@ const Logo = () => {
   const email = 'edwardjohnokoth@gmail.com';
 
   return (
-    <footer className="logo" style={{ padding: '20px'}} >
+    <footer className="logo"  >
        
         <div className='iconlist'>
 

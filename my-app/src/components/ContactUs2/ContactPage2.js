@@ -67,7 +67,7 @@ function ContactPage2() {
 
   return (
     <div className='contact-page-container' id="contact-section">
-    Contact page container
+   
   {/* Main content */}
   <div className='main-content'>
     
@@ -83,9 +83,7 @@ function ContactPage2() {
 
 
                 <h2>Contact Us</h2>
-                <p>
-                  For any inquiries or to request a quote, please feel free to contact us.
-                </p>
+              
                 <form ref={form} onSubmit={handleFormSubmit}>
                 <div className='neumorphic-input-container'>
                 <label htmlFor='name'>Name</label>
@@ -97,7 +95,7 @@ function ContactPage2() {
                 </div>
                 <div className='neumorphic-input-container'>
                 <label htmlFor='message'>Message</label>
-                <textarea id='message' rows='4' name = 'message' value={formData.message} onChange={handleInputChange}></textarea>
+                <textarea id='message' rows='3' name = 'message' value={formData.message} onChange={handleInputChange}></textarea>
                 </div>
                 <button className='neumorphic-button' type='submit'>Send</button>
                 </form>
@@ -110,6 +108,10 @@ function ContactPage2() {
       <div className='overlay-left'>
         {/* Add content for the first overlay here */}
         
+      </div>
+
+      <div class="bottom-div">
+        <p>Designed by Tracy Wankio</p>
       </div>
 
       

@@ -1,10 +1,12 @@
 .App {
   text-align: center;
   height: 300vh;
+  width:100vw;
+ 
   
   background-image: url('./assets/web_bg.png');
   display: grid;
-  grid-template-rows:[landing] 100vh [slidingim] 100vh [contactus];
+  grid-template-rows:[landing] 100vh [slidingim] 100vh [contactus] 100vh;
 }
 
 .App-logo {
@@ -47,6 +49,7 @@
  
   height: 750px ;
   grid-row: landing;
+  width: 100vw;
  
 }
 
@@ -65,8 +68,8 @@
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
               -5px -5px 10px rgba(255, 255, 255, 0.7);
-  grid-template-rows: [nav] 65px [empty] 160px [desc] auto ;
-  grid-template-columns:[left] 400px [right] auto;
+  grid-template-rows: [nav] 65px [empty] 110px [desc] auto ;
+  grid-template-columns:[left] 25% [right] auto;
   backdrop-filter: blur(12px);
 }
 
@@ -81,6 +84,7 @@
   
   grid-row: empty;
   grid-column: right;
+ 
 
 }
 
@@ -90,7 +94,9 @@
   grid-row: desc;
   grid-column: right;
   display: grid;
-  grid-template-columns: [blank] 460px [landing-p] auto;
+  grid-template-columns: [blank] 25% [landing-p] auto;
+  max-height: 100% ;
+  overflow: hidden; 
 
 }
 
@@ -159,4 +165,80 @@
 
   backdrop-filter: blur(12px);
 
+}
+
+
+@media (max-width: 500px) and (min-height: 740px) {
+  .App {
+    height: 300vh; 
+  }
+
+  .App-header {
+    min-height: 50vh; /* Adjust the header height for smaller screens */
+  }
+
+ 
+  .mainimages,
+  .mainimages2 {
+    width: 95%; /* Adjust width for smaller screens */
+    margin-left: 5px; /* Adjust margin for smaller screens */
+    margin-right: 5px; /* Adjust margin for smaller screens */
+  }
+
+  .bottomline {
+    grid-template-columns: [blank] 35% [landing-p] auto; /* Adjust column widths */
+    display: flex;
+  
+  
+      
+    
+   
+  }
+
+  .logodiv {
+    padding-top: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+
+.bredlogo {
+  width: 150px;
+  height: auto;
+}
+
+@media (max-width: 500px) {
+
+ 
+
+
+  .bredlogo {
+    width: 100px; /* You can adjust the width as needed */
+    height: auto;
+  }
+
+  .logodiv{
+       padding-top: 15px;
+  }
+
+  .overlay1 {
+    
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 80%;
+    max-width: 100%;
+    overflow: hidden;
+   
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+                -5px -5px 10px rgba(255, 255, 255, 0.7);
+    grid-template-rows: [nav] 65px [empty] 160px [desc] auto ;
+    grid-template-columns:[left] 40% [right] auto;
+    
+  }
 }
