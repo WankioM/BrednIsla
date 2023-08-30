@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/BrednIsla/static/css/main.214de620.css",
+    "main.js": "/BrednIsla/static/js/main.9271cdb9.js",
+    "static/js/787.28cb0dcd.chunk.js": "/BrednIsla/static/js/787.28cb0dcd.chunk.js",
+    "static/media/web_bg.png": "/BrednIsla/static/media/web_bg.cdc8cfc6a27b7bb81b1e.png",
+    "static/media/Horizontal-Logo-White.png": "/BrednIsla/static/media/Horizontal-Logo-White.78a0e005f1f6386461a7.png",
+    "static/media/brick-wall-g45f40a8cf_1920.jpg": "/BrednIsla/static/media/brick-wall-g45f40a8cf_1920.1922569b85c8b5fc0c5f.jpg",
+    "static/media/black_logo_bni.png": "/BrednIsla/static/media/black_logo_bni.631f16fdd7a2653b3590.png",
+    "static/media/living-room-gbd00dde08_1920.jpg": "/BrednIsla/static/media/living-room-gbd00dde08_1920.50038f0b13534130c6fc.jpg",
+    "static/media/living-room-gcbfefa515_1920.jpg": "/BrednIsla/static/media/living-room-gcbfefa515_1920.50038f0b13534130c6fc.jpg",
+    "static/media/home-gb0bf3c760_1920.jpg": "/BrednIsla/static/media/home-gb0bf3c760_1920.bcda0fbbc917d77bcf88.jpg",
+    "static/media/chairs-gd5e6116b5_1920.jpg": "/BrednIsla/static/media/chairs-gd5e6116b5_1920.386bdfaa8c847de359df.jpg",
+    "static/media/chairs-g941722bc3_1920.jpg": "/BrednIsla/static/media/chairs-g941722bc3_1920.0b0e4171919989f9fb75.jpg",
+    "static/media/chairC_0001.png": "/BrednIsla/static/media/chairC_0001.f9f8693475d92c404d4f.png",
+    "static/media/table_0001.png": "/BrednIsla/static/media/table_0001.26fb8c878a5c29b90f05.png",
+    "static/media/chair_0001.png": "/BrednIsla/static/media/chair_0001.b4a73c1640628e73e788.png",
+    "static/media/shelfC_0001.png": "/BrednIsla/static/media/shelfC_0001.4e1b646fde0489b3677e.png",
+    "static/media/tableC_0001.png": "/BrednIsla/static/media/tableC_0001.522c2d9966fe654bd591.png",
+    "static/media/shelfB_0001.png": "/BrednIsla/static/media/shelfB_0001.5a2e530aff4287c1f483.png",
+    "static/media/shelf_0001.png": "/BrednIsla/static/media/shelf_0001.56e3dd1556e313ee031c.png",
+    "static/media/tableB_0001.png": "/BrednIsla/static/media/tableB_0001.7d55e9e08d722aa476c3.png",
+    "static/media/chairB_0001.png": "/BrednIsla/static/media/chairB_0001.28cba5180a77bc2ed2a7.png",
+    "static/media/DancingScript-Regular.ttf": "/BrednIsla/static/media/DancingScript-Regular.5bfc0dcc0c0ff5a2832e.ttf",
+    "static/media/whatsapp.png": "/BrednIsla/static/media/whatsapp.1662842d4bbe089a1e4f.png",
+    "static/media/instagram.png": "/BrednIsla/static/media/instagram.df97d86906bc7358093d.png",
+    "static/media/mail.png": "/BrednIsla/static/media/mail.8729f9493995ba074cf4.png",
+    "static/media/facebook.png": "/BrednIsla/static/media/facebook.e6629bed21ce62af6488.png",
+    "static/media/logo.svg": "/BrednIsla/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/BrednIsla/index.html",
+    "main.214de620.css.map": "/BrednIsla/static/css/main.214de620.css.map",
+    "main.9271cdb9.js.map": "/BrednIsla/static/js/main.9271cdb9.js.map",
+    "787.28cb0dcd.chunk.js.map": "/BrednIsla/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.214de620.css",
+    "static/js/main.9271cdb9.js"
+  ]
+}
