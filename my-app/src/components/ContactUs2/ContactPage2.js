@@ -35,7 +35,7 @@ function ContactPage2() {
     
 
     // Use the emailjs API to send the email
-    emailjs.sendForm('service_gycljf6', 'template_w787mql', form.current, '0VVWmdqvURihyz7ed')
+    emailjs.sendForm('service_8xm9nfl', 'template_ajqe739', form.current, 'N2ZbPFJbtUDRY-W4I')
       .then((result) => {
           console.log(result.text);
           console.log('Form Elements:', form.current.elements);
@@ -111,7 +111,7 @@ function ContactPage2() {
       </div>
 
       <div class="bottom-div">
-        <p>Designed by Tracy Wankio</p>
+        <p>Website by Tracy Wankio</p>
       </div>
 
       
