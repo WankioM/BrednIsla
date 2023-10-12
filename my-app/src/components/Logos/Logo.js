@@ -5,7 +5,7 @@ import facebookIcon from '../../assets/facebook.png';
 import mailIcon from '../../assets/mail.png';
 import instagramIcon from '../../assets/instagram.png';
 import whatsappIcon from '../../assets/whatsapp.png';
-import SlidingImages from './SlidingImages.js'
+
 
 
 

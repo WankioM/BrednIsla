@@ -50,13 +50,13 @@ const ImageList = () => {
 
     <div className='images'>
         <div classname='sideA'>
-            <img src={imageUrls[currentIndex][0]}  alt="Chair Image" />
+            <img src={imageUrls[currentIndex][0]}  alt="Chair" />
         </div>
         <div classname='sideB'>
-            <img src={imageUrls[currentIndex][1]} />
+            <img src={imageUrls[currentIndex][1]} alt="chair b"/>
         </div>
         <div classname='sideC'>
-        <img src={imageUrls[currentIndex][2]}  />
+        <img src={imageUrls[currentIndex][2]}  alt= "chair c"/>
           
         </div>
         <div className= 'textdesc'>
