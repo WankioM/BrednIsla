@@ -111,7 +111,7 @@ function ContactPage2() {
       </div>
 
       <div class="bottom-div">
-        <p>Website by Tracy Wankio</p>
+        
       </div>
 
       
