@@ -1,10 +1,6 @@
 import React from 'react';
 import './Logos.css';
 
-import facebookIcon from '../../assets/facebook.png';
-import mailIcon from '../../assets/mail.png';
-import instagramIcon from '../../assets/instagram.png';
-import whatsappIcon from '../../assets/whatsapp.png';
 
 
 
@@ -25,20 +21,20 @@ const Logo = () => {
           <div className='icon1'>
 
             <a href='https://www.facebook.com/bredisla/' target='_blank' rel='noopener noreferrer'>
-              <img src={facebookIcon} alt="Facebook Icon" className='logoicon'/>
+              <img src='https://i.postimg.cc/FHB9fWSJ/facebook-e6629bed21ce62af6488.png' alt="Facebook Icon" className='logoicon'/>
               </a>
           </div>
 
         <div className='icon2'>
             <a href={`mailto:${email}`} target='_blank' rel='noopener noreferrer'>
-            <img src={mailIcon} alt="Mail Icon" className='logoicon' />
+            <img src='https://i.postimg.cc/prTGnZzp/mail-8729f9493995ba074cf4.png' alt="Mail Icon" className='logoicon' />
             </a>
         </div>
 
 
         <div className='icon3'>
         <a href='https://www.instagram.com/bredandisla/' target='_blank' rel='noopener noreferrer'>
-        <img src={instagramIcon} alt="Instagram Icon" className='logoicon'/>
+        <img src='https://i.postimg.cc/LXyvR1wR/instagram-df97d86906bc7358093d.png' alt="Instagram Icon" className='logoicon'/>
         </a>
         </div>
 
@@ -49,7 +45,7 @@ const Logo = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-      <img src={whatsappIcon} alt="WhatsApp Icon" className='logoicon'/>
+      <img src='https://i.postimg.cc/PqTMwykT/whatsapp-1662842d4bbe089a1e4f.png' alt="WhatsApp Icon" className='logoicon'/>
       </a>
       </div>
 

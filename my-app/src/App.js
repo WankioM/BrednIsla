@@ -2,7 +2,7 @@
 import './App.css';
 import LandingPage from './components/HomePage/LandingPage';
 import Logo from './components/Logos/Logo';
-import horizontalLogo from './assets/Horizontal-Logo-White.png';
+
 import ImageList2 from './components/ImageListStyle2/ImageList2';
 import ContactPage2 from './components/ContactUs2/ContactPage2';
 
@@ -17,7 +17,7 @@ function App() {
 
           <div className="logodiv">
              
-              <img src={horizontalLogo} alt="BrednIsla logo" className='bredlogo'/>
+              <img src='https://i.postimg.cc/44Qk86P9/hlogo2.png' alt="BrednIsla logo" className='bredlogo'/>
             </div>
 
           <div className="topline">

@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './ImageList2.css';
-import brick from '../../assets/brick-wall-g45f40a8cf_1920.jpg';
-import chairs from '../../assets/chairs-g941722bc3_1920.jpg';
-import chairs2 from '../../assets/chairs-gd5e6116b5_1920.jpg';
-import home from '../../assets/home-gb0bf3c760_1920.jpg';
-import livingroom from '../../assets/living-room-gbd00dde08_1920.jpg';
+
 
 
 
@@ -25,7 +21,7 @@ import livingroom from '../../assets/living-room-gbd00dde08_1920.jpg';
 
       */
 
-    const images=[brick,chairs, chairs2, home, livingroom]
+    const images=['https://i.postimg.cc/MZsvb7mz/brick-wall-g45f40a8cf-1920-1922569b85c8b5fc0c5f.jpg','https://i.postimg.cc/v8VG4t84/chairs-g941722bc3-1920-0b0e4171919989f9fb75.jpg', 'https://i.postimg.cc/631TBWhF/chairs-gd5e6116b5-1920-386bdfaa8c847de359df.jpg', 'https://i.postimg.cc/Y0Y48c1V/home-gb0bf3c760-1920-bcda0fbbc917d77bcf88.jpg', 'https://i.postimg.cc/Y0Y48c1V/home-gb0bf3c760-1920-bcda0fbbc917d77bcf88.jpg']
   
     useEffect(() => {
       const interval = setInterval(() => {
